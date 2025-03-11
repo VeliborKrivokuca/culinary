@@ -96,6 +96,7 @@ const Contact: React.FC = () => {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 {/* Name Field with User Icon */}
+                {/* Name Field with User Icon */}
                 <motion.div
                   className="relative"
                   variants={inputVariants}
@@ -107,16 +108,12 @@ const Contact: React.FC = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5"
-                      fill="none"
                       viewBox="0 0 24 24"
-                      stroke="currentColor"
+                      fill="currentColor"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5.121 17.804A10 10 0 1118.88 6.196a10 10 0 01-13.758 11.608z"
-                      />
+                      {/* A simple user silhouette path */}
+                      <path d="M12 12c2.7 0 8 1.34 8 4v2H4v-2c0-2.66 5.3-4 8-4z" />
+                      <circle cx="12" cy="7" r="4" />
                     </svg>
                   </span>
                   <input
@@ -129,6 +126,7 @@ const Contact: React.FC = () => {
                     required
                   />
                 </motion.div>
+
                 {/* Email Field with Mail Icon */}
                 <motion.div
                   className="relative"
