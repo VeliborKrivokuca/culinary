@@ -1,0 +1,16 @@
+/* src/custom-toast.css */
+.Toastify__toast {
+  background: #f59e0b !important; /* Use your amber color */
+  color: white !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  padding: 1rem !important;
+}
+
+.Toastify__progress-bar {
+  background: white !important;
+}
+
+.Toastify__toast-icon svg {
+    fill: white !important;
+}

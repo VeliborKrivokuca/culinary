@@ -1,0 +1,7 @@
+.restaurant-hero {
+  background-image: url("../assets/restaurant-hero.png");
+}
+
+.btn-hover:hover .animated {
+  filter: invert(1);
+}
