@@ -5,3 +5,7 @@
 .btn-hover:hover .animated {
   filter: invert(1);
 }
+
+.h-screen {
+  height: 100vh;
+}
