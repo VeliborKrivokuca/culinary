@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
         <div className="absolute inset-0 bg-amber-900 opacity-60"></div>
         <div className="relative flex items-center justify-center h-72 md:h-96">
           <motion.h1
-            className="text-4xl md:text-5xl font-bold text-amber-50 text-center"
+            className="text-4xl md:text-5xl font-bold text-amber-50 text-center px-1"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}

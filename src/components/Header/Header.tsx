@@ -46,7 +46,7 @@ const Header: React.FC = () => {
       className={`fixed z-50 transition-all duration-300 
         ${
           isScrolled
-            ? "top-5 left-5 right-4 bg-amber-900 shadow-lg py-2 rounded-xl"
+            ? "top-5 scrolled right-4 bg-amber-900 shadow-lg py-2 rounded-xl"
             : "top-0 left-0 right-0 bg-black/50 py-4"
         }
       `}
@@ -203,7 +203,7 @@ const Header: React.FC = () => {
                 {/* Close Icon */}
                 <button
                   onClick={() => setMobileMenuOpen(false)}
-                  className="fixed top-4 right-4 text-white text-3xl p-5"
+                  className="fixed top-4 right-4 text-white text-3xl p-7"
                 >
                   &times;
                 </button>

@@ -21,3 +21,7 @@
 .nav-link:hover::after {
   width: 100%;
 }
+
+.scrolled {
+  left: 1rem;
+}

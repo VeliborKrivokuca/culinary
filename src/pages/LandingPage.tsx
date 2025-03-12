@@ -139,7 +139,10 @@ const LandingPage: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
               className="flex flex-col md:flex-row gap-4 justify-center md:justify-start flex md:flex lg:block"
             >
-              <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 rounded-lg transition-colors py-3 block mb-3">
+              <button
+                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 rounded-lg transition-colors py-3 block mb-3"
+                onClick={() => navigate("/full-menu")}
+              >
                 {t("buttons.viewMenu")}
               </button>
               <button

@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer";
 import { Dish } from "../types/Dish";
 import { useCart } from "../contexts/CartContext";
 import DishCard from "../components/Dish/DishCard";
+import restaurantHero from "../assets/restaurant-hero.png";
 
 const FullMenu: React.FC = () => {
   const { t } = useTranslation();
@@ -101,8 +102,27 @@ const FullMenu: React.FC = () => {
   return (
     <>
       <Header />
+      <motion.section
+        className="relative pt-24 w-full bg-cover bg-center"
+        style={{ backgroundImage: `url(${restaurantHero})` }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        {/* Amber overlay similar to Contact page */}
+        <div className="absolute inset-0 bg-amber-900 opacity-60"></div>
+        <div className="relative flex items-center justify-center h-72 md:h-96">
+          <motion.h1
+            className="text-4xl md:text-5xl font-bold text-amber-50 text-center px-1"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            {t("menu.fullMenuHeading") || "Full Menu"}
+          </motion.h1>
+        </div>
+      </motion.section>
       <motion.div
-        className="pt-24"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
