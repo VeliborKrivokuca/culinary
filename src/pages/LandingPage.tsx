@@ -105,7 +105,7 @@ const LandingPage: React.FC = () => {
       <Header />
       <motion.section
         id="home"
-        className="h-screen bg-gradient-to-b from-black to-amber-900 flex items-center relative pt-20"
+        className="h-auto md:h-screen bg-gradient-to-b from-black to-amber-900 flex items-center relative pt-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
