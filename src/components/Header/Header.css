@@ -21,3 +21,7 @@
 .nav-link:hover::after {
   width: 100%;
 }
+
+.header-float {
+  left: 1rem;
+}

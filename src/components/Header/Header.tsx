@@ -46,7 +46,7 @@ const Header: React.FC = () => {
       className={`fixed z-50 transition-all duration-300 
         ${
           isScrolled
-            ? "top-5 left-5 right-4 bg-amber-900 shadow-lg py-2 rounded-xl"
+            ? "top-5 left-5 right-4 bg-amber-900 shadow-lg py-2 rounded-xl header-float"
             : "top-0 left-0 right-0 bg-black/50 py-4"
         }
       `}
